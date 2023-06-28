@@ -1,3 +1,4 @@
+import 'package:dado/dice_roller.dart';
 import 'package:flutter/material.dart';
 
 const startAlignment = Alignment.topCenter;
@@ -21,27 +22,9 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: Center(
-          child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Image.asset(
-            'assets/images/dice-1.png',
-            width: 200,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          TextButton(
-            onPressed: rollDice,
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.white,
-              textStyle: const TextStyle(fontSize: 28),
-            ),
-            child: const Text('Rolar o dado'),
-          )
-        ],
-      )),
+      child: const Center(
+        child: DiceRoller()
+      ),
     );
   }
 }

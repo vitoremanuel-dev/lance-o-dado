@@ -5,6 +5,7 @@ import 'gradient_container.dart';
 void main() {
   runApp(
     const MaterialApp(
+      title: 'DADO',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: GradientContainer(
